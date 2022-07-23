@@ -31,6 +31,6 @@ class RequestPasswordMail extends Mailable
      */
     public function build()
     {
-        return $this->markdown('email.password-reset')->with(['token' => $this->token]);
+        return $this->markdown('password-reset')->with(['token' => $this->token]);
     }
 }
